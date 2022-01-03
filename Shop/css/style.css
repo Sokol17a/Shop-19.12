@@ -1,0 +1,229 @@
+:root {
+    --black: #222222;
+    --pink-bkg: #f1e4e6;
+    --pink-color: #F09BA7;
+}
+.body {
+    font-family: 'lato';
+    font-style: normal;
+    font-size: 14px;
+    line-height: 16px;
+}
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0);
+}
+.header {
+    background-color: var(--black);
+    min-height: 75px;
+}
+.header__link {
+    text-decoration: none;
+    margin: 0 0 0 33px;
+}
+.header__wrp {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__logo-form-wrp {
+    display: flex;
+}
+.header__search {
+    margin: 0 0 0 41px;
+}
+.header__menu-btn {
+    border: 1px solid;
+    background-color: transparent;
+}
+.brand {
+    display: flex;
+    margin: 0 0 63px;
+}
+.brand__title-wrp {
+    flex-grow: 1;
+    background-color: var(--pink-bkg);
+    display: flex;
+    align-items: center;
+    padding: 0 0 0 92px;
+}
+.brand__title {
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 58px;
+    text-transform: uppercase;
+    display: block;
+}
+.brand__subtitle {
+font-size: 32px;
+font-style: normal;
+font-weight: 700;
+line-height: 38px;
+}
+.brand__subtitle-pink {
+    color: var(--pink-color);
+}
+.sales {
+    display: flex;
+    justify-content: space-between;
+}
+.sales__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.sales__item {
+    width: 360px;
+    min-height: 260px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid;
+    flex-direction: column;
+}
+.sales__item--woman {
+    background-image: url(../img/woman\ 2.png);
+    margin: 0 30px 0 0;
+}
+.sales__item--man {
+    background-image: url(../img/man\ 2.png);
+}
+.sales__item--kids {
+    background-image: url(../img/kid.png);
+}
+.sales__item--shoes {
+    background-image: url(../img/shoes.png);
+    width: 100%;
+    margin-top: 30px;
+}
+.sales__item-text {
+font-weight: normal;
+font-size: 16px;
+line-height: 19px;
+text-align: center;
+color: #FFFFFF;
+}
+.sales__item-title {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: var(--pink-color);
+    text-transform: uppercase;
+}
+.sales__item-offer {
+    font-weight: normal;
+font-size: 16px;
+line-height: 19px;
+text-align: center;
+color: #FFFFFF;
+text-transform: uppercase;
+}
+.sales__item-chapter {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: var(--pink-color);
+    text-transform: uppercase;
+}
+.sales__item-text {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+.products {
+    display: flex;
+    flex-direction: column;
+    width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.products__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 48px;
+}
+.products__item {
+    width: 33%;
+    min-height: 260px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid;
+    flex-direction: column;
+    background-color: #F8F8F8;
+}
+.products__title {
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 36px;
+    justify-content: space-between;
+    padding-top: 97px;
+}
+.products__subtitle {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #9F9F9F;
+    padding-top: 6px;
+}
+.products__item-title {
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 16px;
+    color: var(--black);
+    text-transform: uppercase;
+    padding-bottom: 13px;
+}
+.products__item-text {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #5D5D5D;
+    padding-bottom: 18px;
+}
+.products__header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.products__text {
+text-align: center;
+}
+.products__item-price {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #F16D7F;
+}
+.bottom__title {
+    display: flex;
+    padding-top: 49px;
+
+}
+.bottom__title-text {
+    border: solid 1px #FF6A6A;
+    align-items: center;
+    margin-left: 695px;
+    padding: 14px;
+    font-size: 16px;
+    line-height: 19px;
+    color: #F26376;
+}
