@@ -65,10 +65,10 @@
     display: block;
 }
 .brand__subtitle {
-font-size: 32px;
-font-style: normal;
-font-weight: 700;
-line-height: 38px;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 38px;
 }
 .brand__subtitle-pink {
     color: var(--pink-color);
@@ -107,11 +107,11 @@ line-height: 38px;
     margin-top: 30px;
 }
 .sales__item-text {
-font-weight: normal;
-font-size: 16px;
-line-height: 19px;
-text-align: center;
-color: #FFFFFF;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #FFFFFF;
 }
 .sales__item-title {
     font-weight: normal;
@@ -123,11 +123,11 @@ color: #FFFFFF;
 }
 .sales__item-offer {
     font-weight: normal;
-font-size: 16px;
-line-height: 19px;
-text-align: center;
-color: #FFFFFF;
-text-transform: uppercase;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #FFFFFF;
+    text-transform: uppercase;
 }
 .sales__item-chapter {
     font-weight: normal;
@@ -204,7 +204,7 @@ text-transform: uppercase;
     justify-content: center;
 }
 .products__text {
-text-align: center;
+    text-align: center;
 }
 .products__item-price {
     font-style: normal;
@@ -213,6 +213,27 @@ text-align: center;
     line-height: 19px;
     color: #F16D7F;
 }
+
+.products__item:focus .products__item-overlay,
+.products__item:hover .products__item-overlay{
+    filter: brightness(0.7);
+}
+
+.products__item:hover .button {
+    opacity: 1;
+}
+.button {
+    position: absolute;
+    opacity: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+.products__item-overlay {
+    position: relative;
+}
+
 .bottom__title {
     display: flex;
     padding-top: 49px;
@@ -226,4 +247,185 @@ text-align: center;
     font-size: 16px;
     line-height: 19px;
     color: #F26376;
+}
+
+.white-icon {
+    fill: azure;
+}
+.header__search {
+    border: none;
+}
+
+.header__search:hover .white-icon
+.header__search:focus .white-icon {
+    fill: red;
+}
+
+
+.header__menu-btn {
+    border: none   ;
+}
+
+.header__menu-btn:hover .white-icon,
+.header__menu-btn:focus .white-icon {
+    fill: red;
+}
+
+.header__link-item {
+    fill: azure;
+}
+
+.header__menu-btn:active {
+    outline: 1px solid azure;
+}
+
+.header__link:hover .header__link-item,
+.header__link:focus .header__link-item {
+    fill: red;
+}
+
+.header__link:active {
+    outline: 1px solid azure;
+}
+
+.header__nav:hover .nav-sub-item__link,
+.header__nav:focus .nav-sub-item__link {
+    fill: red;
+}
+
+.header__nav:active .nav-sub-item__link {
+    outline: 1px solid azure;
+}
+
+.bottom__title:hover .bottom__title-text,
+.bottom__title:focus .bottom__title-text {
+    fill: red;
+}
+
+.bottom__title:active .bottom__title-text {
+    outline: 1px solid azure;
+}
+
+.mail__icon {
+    fill: azure;
+    border: none;
+}
+
+.mail__icon:hover .mail__icon-item,
+.mail__icon:focus .mail__icon-item {
+    fill: red;
+}
+
+.mail__icon:active .mail__icon-item {
+    outline: 1px solid azure;
+}
+
+.bottom__block {
+    padding-top: 96px;
+}
+.bottom__list {
+    padding-top: 109px;
+    background-color: black;
+    
+}
+.bottom__list-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    width: 1000px;
+    font-size: 14px;
+    padding-left: 460px;
+}
+
+.Bottom__lis-text {
+    color: #FBFBFB;
+    padding-top: 29px;
+}
+
+.Bottom__lis-item-text {
+    color: #FBFBFB;
+    padding-top: 16px;
+    padding-bottom: 104px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+}
+
+.mail {
+    display: flex;
+    padding-right: 327px;
+    flex-direction: column;
+}
+
+.mail__icon-item {
+    border-radius: 50px 0 0 50px;
+    width: 323px;
+    height: 49px;
+    border: none;
+    background-color: #E1E1E1;
+}
+
+.contacts__mail {
+    padding-top: 32px;
+}
+.mail__send {
+    border-radius: 0 50px 50px 0;
+    background-color: #F16D7F;
+    color: #FFFFFF;
+    width: 100px;
+    height: 49px;
+    margin-left: -10px;
+    border: none;
+}
+
+.bottom__item {
+    display: flex;
+    justify-content: space-around;
+    background-image: url(../img/airplan.svg);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 448px;
+}
+
+.bottom__item-overlay {
+    width: 100%;
+    height: 100%;
+    background-color: #F4F4F4B2;
+    display: flex;
+    justify-content: space-around;
+}
+.bottom__item-img {
+    text-align: center;
+    padding-top: 87px;
+}
+
+.bottom__woman {
+    width: 145px;
+}
+.bottom__item-text {
+    width: 359px;
+}
+
+.bottom__text {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.sub {
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 150px;
+}
+
+.sub__text {
+    text-align: center;
+}
+
+.mark {
+    padding-top: 30px;
 }
